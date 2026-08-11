@@ -1,5 +1,10 @@
 # Aster Trading Bot Framework
 
+[![CI](https://github.com/crisis789/aster-trading-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/crisis789/aster-trading-bot/actions/workflows/ci.yml)
+[![PyPI version](https://img.shields.io/pypi/v/aster-trading-bot.svg)](https://pypi.org/project/aster-trading-bot/)
+[![Python](https://img.shields.io/pypi/pyversions/aster-trading-bot.svg)](https://pypi.org/project/aster-trading-bot/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A production-oriented trading bot framework for [Aster DEX](https://asterdex.com) USDT-margined futures, built on the official [Aster FAPI V3 API](https://github.com/asterdex/api-docs).
 
 > ⚠️ **DISCLAIMER**: Cryptocurrency futures trading with leverage carries extreme risk of loss. This project is for **educational and research purposes only**. It is NOT financial advice. You can lose all your margin. Trade at your own risk.
