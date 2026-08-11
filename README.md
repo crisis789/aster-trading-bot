@@ -43,9 +43,23 @@ aster-trading-bot/
 ├── examples/
 │   ├── strategy_demo.py    # Demo EMA-cross strategy (shows how to use the framework)
 │   └── account_monitor.py  # WebSocket account monitor (orders/balance/margin calls)
+├── tests/
+│   └── test_framework.py   # Unit tests (unittest, no network needed)
+├── docs/
+│   └── strategy-development.md  # How to build your own strategy
+├── .github/workflows/ci.yml    # CI: tests on Python 3.10/3.11/3.12
 ├── .env.example            # Credentials template
 └── README.md
 ```
+
+## 🧪 Testing
+
+```bash
+pip install -r requirements.txt
+python -m unittest tests.test_framework -v
+```
+
+CI runs automatically on every push (GitHub Actions, Python 3.10–3.12).
 
 ## 🔐 Security Notes
 
