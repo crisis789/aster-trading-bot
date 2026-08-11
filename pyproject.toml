@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aster-trading-bot"
+version = "0.2.0"
+description = "Production-oriented trading bot framework for Aster DEX USDT-margined futures (EIP-712 signed FAPI V3)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "crisis789" }]
+keywords = ["aster", "dex", "futures", "trading", "bot", "crypto", "eip-712"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "eth-account>=0.11",
+    "websocket-client>=1.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/crisis789/aster-trading-bot"
+Repository = "https://github.com/crisis789/aster-trading-bot"
+Documentation = "https://github.com/crisis789/aster-trading-bot/blob/master/README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aster_trading_bot = ["py.typed"]

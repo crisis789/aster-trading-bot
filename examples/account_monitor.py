@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
-from aster_client import AsterClientV3
+from aster_trading_bot import AsterClientV3
 
 BJ = timezone(timedelta(hours=8))
 LOG_FILE = os.path.join(os.path.dirname(__file__), '..', 'account_monitor.log')

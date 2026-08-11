@@ -21,7 +21,7 @@ from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 load_dotenv()  # 从当前目录 .env 读取凭据
 
-from aster_client import AsterClientV3
+from .aster_client import AsterClientV3
 
 # ===== 风控参数 (可按需调整) =====
 STOP_PCT = 0.03        # 止损: 价格反向3%

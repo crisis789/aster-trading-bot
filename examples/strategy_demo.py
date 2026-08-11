@@ -16,23 +16,11 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import requests
-from bot_framework import TradingBot, log
+from aster_trading_bot.bot_framework import TradingBot, log
+from aster_trading_bot.indicators import ema_series
 
 SYMBOLS = ["HYPEUSDT", "ENAUSDT"]
 EMA_F, EMA_S = 10, 30
-
-
-def ema_series(vals, n):
-    if len(vals) < n:
-        return None
-    k = 2 / (n + 1)
-    out = [None] * (n - 1)
-    e = sum(vals[:n]) / n
-    out.append(e)
-    for v in vals[n:]:
-        e = v * k + e * (1 - k)
-        out.append(e)
-    return out
 
 
 class EmaCrossBot(TradingBot):

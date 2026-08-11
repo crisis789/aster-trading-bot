@@ -5,7 +5,7 @@ import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-import bot_framework
+from aster_trading_bot import bot_framework
 
 
 class FakeClient:

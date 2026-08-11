@@ -25,7 +25,7 @@ The framework owns **risk management and execution**; your strategy owns **decis
 ```python
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
-from bot_framework import TradingBot
+from aster_trading_bot import TradingBot
 
 class MyStrategy(TradingBot):
     def signal(self, symbol):
